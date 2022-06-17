@@ -1,0 +1,61 @@
+.background {
+  width:100vw;
+  height:100vh;
+  background:url(../assets/back.jpg);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+.bottunEnter {
+  width:500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+}
+.buttonCenter {
+  width:490px;
+  height: 490px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .example-form {
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction:column;
+    background: rgba(255, 255, 255, 0.925);
+    padding: 20px 0;
+    border-radius: 5px;
+
+  }
+
+  .example-full-width {
+    width:400px;
+  }
+  .recovery {
+    display: flex;
+    gap: 60px;
+
+      a {
+        text-decoration: none;
+        color: #000
+      }
+  }
+  .button {
+    display:flex;
+    gap: 60px;
+    padding-bottom:20px ;
+
+    button {
+      width:140px
+    }
+  }
+}

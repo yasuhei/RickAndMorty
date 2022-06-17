@@ -1,0 +1,121 @@
+.backForCard {
+background-image: url(../../../assets/test5.png);
+opacity: 90%;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
+.form {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.986);
+  height: 100%;
+  display:flex;
+  gap: 10px;
+  flex-direction:column;
+
+
+  .form_input {
+    display: flex;
+    gap: 10px;
+
+  }
+
+
+
+  .filter-buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+}
+._button_filtros {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+.gridCard {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+
+
+  .grid_1 {
+    grid-column: span 1;
+
+  }
+  .grid_2 {
+    grid-column: span 2;
+  }
+  .grid_3 {
+    grid-column: span 3;
+  }
+  .grid_4 {
+    grid-column: span 4;
+  }
+  .grid_5 {
+    grid-column: span 5;
+  }
+  .grid_6 {
+    grid-column: span 6;
+  }
+  .grid_7 {
+    grid-column: span 7;
+  }
+
+
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.100);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 0px 50px 0px 50px;
+
+
+  .img {
+    width: 120px;
+
+  }
+
+  img {
+    width: 120px;
+    height: 120px;
+    border-radius: 100px;
+
+  }
+  h3 {
+    margin-bottom: 0;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.719);
+
+  }
+
+  .caracteristicas {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-left: 30px;
+    padding-top: 10px;
+
+
+       p {
+         width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        color: rgba(255, 255, 255, 0.719);
+
+        mat-icon {
+          display:flex;
+          margin-right: 7px;
+                }
+       }
+  }
+}

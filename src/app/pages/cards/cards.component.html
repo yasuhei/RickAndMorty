@@ -1,0 +1,75 @@
+<!-- <mat-expansion-panel class="no-shadow" hideToggle (opened)="panelOpen = true" (closed)="panelOpen = false">
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      Filtros
+      <mat-icon>{{ panelOpen ? 'expand_less' : 'expand_more' }}</mat-icon>
+    </mat-panel-title>
+  </mat-expansion-panel-header> -->
+
+
+
+<div class="backForCard">
+  <form [formGroup]="filtro" class="form" (ngSubmit)="filter()" autocomplete="addss2" role="off">
+    <div class="form_input">
+      <mat-form-field appearance="outline">
+        <mat-label>Nome</mat-label>
+        <input matInput type="text" formControlName="name" />
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Status</mat-label>
+        <input matInput type="text" formControlName="status" />
+      </mat-form-field>
+    </div>
+
+
+
+    <div class="_button_filtros">
+      <div class="filter-buttons">
+        <button type="reset" mat-button color="primary" (click)="cleanFilter()">
+
+          Limpar filtros
+        </button>
+      </div>
+
+      <button type="submit" mat-raised-button color="primary">Filtrar</button>
+    </div>
+
+  </form>
+  <div class="gridCard">
+
+
+
+    <div class="card " *ngFor="let card of data">
+
+      <div class="img">
+        <img [src]="card.image" alt="">
+        <h3>{{card.name.substring(0, 14)}}</h3>
+      </div>
+      <div class="caracteristicas">
+        <p class="grid_5" [ngStyle]="{color: card.status === 'Alive' ? '#027333' : '' || card.status === 'Dead' ? '#8C1F28' : ''}">
+          <mat-icon>favorite</mat-icon> Status: {{card.status}}
+        </p>
+
+        <p class="grid_3">
+          <mat-icon>{{card.gender === 'Male' ? 'man' : card.gender === 'Female' ? 'woman' : 'pest_control' }}</mat-icon> Gênero: {{card.gender}}
+        </p>
+        <p class="grid_2">
+          <mat-icon>person</mat-icon> Especie: {{card.species}}
+        </p>
+
+        <p class="grid_3">
+          <mat-icon>public</mat-icon> Origem: {{card.origin.name}}
+        </p>
+        <p class="grid_2">
+          <mat-icon>psychology</mat-icon> Tipo: {{card.type || 'Desconhecido'}}
+        </p>
+
+        <p class="grid_5">
+          <mat-icon>home</mat-icon> Local: {{card.location.name}}
+        </p>
+
+      </div>
+
+    </div>
+  </div>
+</div>
