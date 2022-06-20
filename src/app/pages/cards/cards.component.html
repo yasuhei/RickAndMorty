@@ -45,9 +45,10 @@
         <img [src]="card.image" alt="">
         <h3>{{card.name.substring(0, 14)}}</h3>
       </div>
-      <div class="caracteristicas">
-        <p class="grid_5" [ngStyle]="{color: card.status === 'Alive' ? '#027333' : '' || card.status === 'Dead' ? '#8C1F28' : ''}">
-          <mat-icon>favorite</mat-icon> Status: {{card.status}}
+      <div class="caracteristicas" style="cursor: pointer" (click)="openModal(card.id)">
+        <p class="grid_5" [ngStyle]="{color: card.status === 'Alive' ? '#8C1F28' : '' || card.status === 'Dead' ? '#000' : ''}">
+          <mat-icon>{{card.status === 'Alive' ? 'favorite' : 'heart_broken'}}</mat-icon>
+          Status: {{card.status}}
         </p>
 
         <p class="grid_3">

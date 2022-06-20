@@ -1,6 +1,8 @@
 import { DashboardService } from './../../../service/dashboard.service';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { MatDialog } from '@angular/material/dialog';
+import { CardModalComponent } from './card-modal/card-modal.component';
 
 
 export interface DataApi {
@@ -12,7 +14,8 @@ export interface DataApi {
   created: string;
   gender: string;
   location:any;
-  origin: any
+  origin: any;
+  id: number;
 }
 export interface Locale {
   name:string;
@@ -34,11 +37,14 @@ export class CardsComponent implements OnInit {
   origin?: string
   panelOpen = false;
   resultsFilter = [] ;
+  id!: number
 
 
   constructor(
     private dashboard: DashboardService,
     private formBuilder: FormBuilder,
+    private dialog: MatDialog,
+
 
   ) { }
 
@@ -55,12 +61,12 @@ export class CardsComponent implements OnInit {
         this.local = success.results.location
         this.origin = success.results.origin
 
-      }
-    )
+      })
   }
 
+
   filter() {
-    let { name, status, species, image,type,created,gender, location,origin  } =  this.filtro.getRawValue();
+    let { name, status} =  this.filtro.getRawValue();
     let query: any = {};
 
     if(name) {
@@ -74,6 +80,7 @@ export class CardsComponent implements OnInit {
     this.dashboard.getFilter(query).subscribe(
       (success: any) => {
         this.data = success.results
+
       }
     )
 
@@ -86,10 +93,26 @@ export class CardsComponent implements OnInit {
    getRick() {
     this.dashboard.getRick().subscribe(
       (success: any) => {
-        this.data = success.results
+        this.data = success.results[0].id
+
+        console.log(this.id)
+
 
       }
     )
+  }
+
+  openModal(id: number): void {
+    let dialogRef = this.dialog.open(CardModalComponent, {
+      panelClass: 'dialog-card',
+      autoFocus: false,
+      data: {
+        id
+      }
+    })
+    console.log(this.id)
+
+
   }
 
 }
