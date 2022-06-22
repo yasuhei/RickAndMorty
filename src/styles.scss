@@ -7,3 +7,38 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mat-dialog-container {
+ 	background: linear-gradient(to bottom, #212936 50px, #fff 50px 100%);
+	position: relative;
+	max-width: 95vw !important;
+  height: 90vh !important;
+  width: 95vw !important;
+
+
+
+// .dialog-card {
+// 	background: linear-gradient(to bottom, #212936 50px, #fff 50px 100%);
+// 	position: relative;
+// 	width: 95vw !important;
+// 	height: 90vh;
+
+// }
+}
+
+.modal-title {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  color: #f1f1f1;
+  line-height: 50px;
+  font-size: 14pt;
+}
+
+.close-button {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  color: #f1f1f1;
+  cursor: pointer;
+}

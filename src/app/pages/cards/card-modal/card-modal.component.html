@@ -1,0 +1,23 @@
+<div class="modal-new">
+  <div class="content">
+    <div class="caract">
+      <h1>{{data.card.name}}</h1>
+
+      <img [src]="data.card.image">
+    </div>
+
+    <div class="episodios" *ngFor="let episodio of data.card.episode">
+
+      <a target="_blank" [href]="episodio">{{episodio}}</a>
+    </div>
+
+
+  </div>
+
+</div>
+
+
+<p class="modal-title">Caracteristicas dos personagens</p>
+<mat-icon title="Fechar" class="close-button" [matDialogClose]="sent">
+  close
+</mat-icon>

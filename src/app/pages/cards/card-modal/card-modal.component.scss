@@ -1,0 +1,27 @@
+.modal-new {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  width: 100%;
+
+  .content {
+    display: flex;
+    flex-direction:column;
+
+
+    .episodios {
+
+    }
+
+  }
+
+  .caract {
+    text-align: center;
+  }
+
+  .episodios {
+    display: flex;
+  }
+
+}

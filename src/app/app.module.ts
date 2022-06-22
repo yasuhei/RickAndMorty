@@ -18,6 +18,9 @@ import { CardsComponent } from './pages/cards/cards.component';
 import {MatExpansionModule} from '@angular/material/expansion'
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {MatDialogModule} from '@angular/material/dialog';
+import { CardModalComponent } from './pages/cards/card-modal/card-modal.component';
+
 
 
 
@@ -28,7 +31,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   declarations: [
     AppComponent,
     HomeComponent,
-    CardsComponent
+    CardsComponent,
+    CardModalComponent
+
 
   ],
   imports: [
@@ -47,7 +52,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatButtonModule,
     MatExpansionModule,
     MatFormFieldModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatDialogModule
 
 
 
