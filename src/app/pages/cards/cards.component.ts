@@ -93,7 +93,7 @@ export class CardsComponent implements OnInit {
    getRick() {
     this.dashboard.getRick().subscribe(
       (success: any) => {
-        this.data = success.results[0].id
+        this.data = success.results
 
         console.log(this.id)
 
@@ -102,15 +102,16 @@ export class CardsComponent implements OnInit {
     )
   }
 
-  openModal(id: number): void {
+  openModal( card: any, id: number): void {
     let dialogRef = this.dialog.open(CardModalComponent, {
       panelClass: 'dialog-card',
       autoFocus: false,
       data: {
+        card,
         id
       }
     })
-    console.log(this.id)
+    console.log(dialogRef)
 
 
   }

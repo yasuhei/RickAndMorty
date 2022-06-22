@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { MatDialogRef } from '@angular/material/dialog';
+import { Component, Inject, OnInit } from '@angular/core';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { DashboardService } from 'src/service/dashboard.service';
-import { DataApi } from '../cards.component';
+import { CardsComponent, DataApi } from '../cards.component';
 
 @Component({
   selector: 'app-card-modal',
@@ -11,23 +11,19 @@ import { DataApi } from '../cards.component';
 export class CardModalComponent implements OnInit {
 
   sent: boolean = false;
-  data = [] as DataApi[]
+  name!: string;
   episode = [];
   constructor(
     private dashboard: DashboardService,
+    @Inject(MAT_DIALOG_DATA) public data: any,
 
     ) {
 
   }
 
   ngOnInit() {
+console.log(this.data)
 
-    this.dashboard.getRick().subscribe(
-      (success: any) => {
-        this.data = success.results
-
-      }
-      )
   }
 
 
