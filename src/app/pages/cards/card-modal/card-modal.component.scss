@@ -7,21 +7,47 @@
 
   .content {
     display: flex;
-    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
 
+    .char {
+      width: 350px;
+    }
 
-    .episodios {
+    .caracteristicas{
+      display:grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 10px;
 
+      p, mat-icon {
+        font-size: 30px;
+        text-align: center;
+      }
     }
 
   }
 
+
+
   .caract {
     text-align: center;
+
+
   }
 
   .episodios {
+
+    width: 278px;
+    height:auto;
     display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      width: 100%;
+    }
   }
 
 }
+

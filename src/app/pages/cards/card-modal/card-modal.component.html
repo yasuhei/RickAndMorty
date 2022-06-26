@@ -1,15 +1,42 @@
 <div class="modal-new">
   <div class="content">
     <div class="caract">
+
+      <img class="char" [src]="data.card.image">
       <h1>{{data.card.name}}</h1>
-
-      <img [src]="data.card.image">
     </div>
 
-    <div class="episodios" *ngFor="let episodio of data.card.episode">
+    <div class="caracteristicas">
+      <p class="grid_5" [ngStyle]="{color: data.card.status === 'Alive' ? '#8C1F28' : '' || data.card.status === 'Dead' ? '#000' : ''}">
+        <mat-icon>{{data.card.status === 'Alive' ? 'favorite' : 'heart_broken'}}</mat-icon>
+        Status: {{data.card.status}}
+      </p>
 
-      <a target="_blank" [href]="episodio">{{episodio}}</a>
+      <p class="grid_3">
+        <mat-icon>{{data.card.gender === 'Male' ? 'man' : data.card.gender === 'Female' ? 'woman' : 'pest_control' }}</mat-icon> Gênero: {{data.card.gender}}
+      </p>
+      <p class="grid_2">
+        <mat-icon>person</mat-icon> Especie: {{data.card.species}}
+      </p>
+
+      <p class="grid_3">
+        <mat-icon>public</mat-icon> Origem: {{data.card.origin.name}}
+      </p>
+      <p class="grid_2">
+        <mat-icon>psychology</mat-icon> Tipo: {{data.card.type || 'Desconhecido'}}
+      </p>
+
+      <p class="grid_5">
+        <mat-icon>home</mat-icon> Local: {{data.card.location.name}}
+      </p>
+
     </div>
+
+
+    <!-- <div class="episodios">
+
+      <a target="_blank" [href]="data.card.episode">{{data.card.episode}}</a>
+    </div> -->
 
 
   </div>
