@@ -35,42 +35,17 @@
     </div>
 
   </form>
-  <div class="gridCard">
+  <h1 class="title_person">Principais personagens</h1>
 
+  <div class="flex">
+    <div class="gridCard">
+      <div class="card" *ngFor="let card of data" style="cursor: pointer;" (click)="openModal(card, card.id)">
 
-
-    <div class="card " *ngFor="let card of data">
-
-      <div class="img">
-        <img [src]="card.image" alt="">
-        <h3>{{card.name.substring(0, 14)}}</h3>
+        <div class="img">
+          <img [src]="card.image" alt="">
+          <h3>{{card.name.substring(0, 14)}}</h3>
+        </div>
       </div>
-      <div class="caracteristicas" style="cursor: pointer" (click)="openModal(card, card.id)">
-        <p class="grid_5" [ngStyle]="{color: card.status === 'Alive' ? '#8C1F28' : '' || card.status === 'Dead' ? '#000' : ''}">
-          <mat-icon>{{card.status === 'Alive' ? 'favorite' : 'heart_broken'}}</mat-icon>
-          Status: {{card.status}}
-        </p>
-
-        <p class="grid_3">
-          <mat-icon>{{card.gender === 'Male' ? 'man' : card.gender === 'Female' ? 'woman' : 'pest_control' }}</mat-icon> Gênero: {{card.gender}}
-        </p>
-        <p class="grid_2">
-          <mat-icon>person</mat-icon> Especie: {{card.species}}
-        </p>
-
-        <p class="grid_3">
-          <mat-icon>public</mat-icon> Origem: {{card.origin.name}}
-        </p>
-        <p class="grid_2">
-          <mat-icon>psychology</mat-icon> Tipo: {{card.type || 'Desconhecido'}}
-        </p>
-
-        <p class="grid_5">
-          <mat-icon>home</mat-icon> Local: {{card.location.name}}
-        </p>
-
-      </div>
-
     </div>
   </div>
 </div>

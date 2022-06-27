@@ -1,15 +1,77 @@
+<h1 class="title_name">{{data.card.name}}</h1>
 <div class="modal-new">
   <div class="content">
     <div class="caract">
-      <h1>{{data.card.name}}</h1>
 
-      <img [src]="data.card.image">
+      <img class="char" [src]="data.card.image">
     </div>
 
-    <div class="episodios" *ngFor="let episodio of data.card.episode">
+    <div class="caracteristicas">
 
-      <a target="_blank" [href]="episodio">{{episodio}}</a>
+      <div class="icons">
+
+        <p class="grid_5">
+          Status: {{data.card.status}}
+        </p>
+        <mat-icon [ngStyle]="{color: data.card.status === 'Alive' ? '#8C1F28' : '' || data.card.status === 'Dead' ? '#000' : ''}">{{data.card.status === 'Alive' ? 'favorite' : 'heart_broken'}}</mat-icon>
+
+      </div>
+
+      <div class="icons">
+        <p class="grid_3">
+          Gênero: {{data.card.gender}}
+        </p>
+        <mat-icon>{{data.card.gender === 'Male' ? 'man' : data.card.gender === 'Female' ? 'woman' : 'pest_control' }}</mat-icon>
+
+      </div>
+
+      <div class="icons mat-iconks">
+        <mat-icon>home</mat-icon>
+        <p class="grid_5">
+          Local:{{data.card.location.name}}
+        </p>
+
+      </div>
+
+
+
+      <div class="icons">
+        <p class="grid_2">
+          Especie: {{data.card.species}}
+        </p>
+        <mat-icon>person</mat-icon>
+
+      </div>
+
+      <div class="icons">
+        <p class="grid_2">
+          Tipo:{{data.card.type || 'Desconhecido'}}
+        </p>
+        <mat-icon>psychology</mat-icon>
+
+      </div>
+
+
+
+
+
+      <div class="icons">
+        <mat-icon>public</mat-icon>
+        <p class="grid_3">
+          Origem: {{data.card.origin.name}}
+        </p>
+
+      </div>
+
+
+
     </div>
+
+
+    <!-- <div class="episodios">
+
+      <a target="_blank" [href]="data.card.episode">{{data.card.episode}}</a>
+    </div> -->
 
 
   </div>

@@ -1,26 +1,40 @@
 .backForCard {
-background-image: url(../../../assets/test5.png);
-opacity: 90%;
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
+  // background-image: url(../../../assets/test5.png);
+  background-color: #34313B ;
+  opacity: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.title_person {
+  margin-left: 20px;
+  padding-top: 10px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.719);
+  font-size: 24px;
+  font-weight:500;
+}
+.flex {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+
+
 }
 .form {
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.986);
+  background-color:#f1f1f1;
   height: 100%;
-  display:flex;
+  display: flex;
   gap: 10px;
-  flex-direction:column;
-
+  flex-direction: column;
 
   .form_input {
     display: flex;
     gap: 10px;
-
   }
-
-
 
   .filter-buttons {
     display: flex;
@@ -36,16 +50,18 @@ background-size: cover;
   padding-bottom: 10px;
 }
 .gridCard {
-  width: 100%;
+  width: 78%;
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 18px;
+  padding: 10px 0 10px 20px;
+  align-items: center;
+  justify-content: center;
 
 
   .grid_1 {
     grid-column: span 1;
-
   }
   .grid_2 {
     grid-column: span 2;
@@ -65,57 +81,42 @@ background-size: cover;
   .grid_7 {
     grid-column: span 7;
   }
-
-
 }
 
 .card {
-  width: 100%;
-  height: 100%;
+  width: 250px;
+  height: 285px;
   display: flex;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.100);
+  background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
-  border-radius: 0px 50px 0px 50px;
+  border: 2px solid  rgb(99,38,250);
+  background: linear-gradient(90deg, rgba(99,38,250,1) 0%, rgba(139,33,222,1) 35%, rgba(212,49,245,1) 100%);
+  // animation: mymove 5s  infinite ease-in-out;
+  // position: relative;
 
+  // border-radius: 0px 50px 0px 50px;
 
   .img {
-    width: 120px;
-
+    width: 100%;
   }
 
   img {
-    width: 120px;
-    height: 120px;
-    border-radius: 100px;
-
+    width: 100%;
+    height: 100%;
   }
   h3 {
     margin-bottom: 0;
     text-align: center;
     color: rgba(255, 255, 255, 0.719);
-
   }
 
-  .caracteristicas {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 10px;
-    margin-left: 30px;
-    padding-top: 10px;
 
-
-       p {
-         width: 100%;
-        display: flex;
-        justify-content: flex-start;
-        color: rgba(255, 255, 255, 0.719);
-
-        mat-icon {
-          display:flex;
-          margin-right: 7px;
-                }
-       }
-  }
+}
+@keyframes mymove {
+  0%   {top: 0px;}
+  25%  {top: 200px;}
+  75%  {top: 50px}
+  100% {top: 100px;}
 }
