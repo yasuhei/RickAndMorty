@@ -39,7 +39,7 @@
 
   <div class="flex">
     <div class="gridCard">
-      <div class="card " *ngFor="let card of data" style="cursor: pointer;" (click)="openModal(card, card.id)">
+      <div class="card" *ngFor="let card of data" style="cursor: pointer;" (click)="openModal(card, card.id)">
 
         <div class="img">
           <img [src]="card.image" alt="">

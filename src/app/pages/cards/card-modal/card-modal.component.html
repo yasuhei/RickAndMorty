@@ -1,34 +1,69 @@
+<h1 class="title_name">{{data.card.name}}</h1>
 <div class="modal-new">
   <div class="content">
     <div class="caract">
 
       <img class="char" [src]="data.card.image">
-      <h1>{{data.card.name}}</h1>
     </div>
 
     <div class="caracteristicas">
-      <p class="grid_5" [ngStyle]="{color: data.card.status === 'Alive' ? '#8C1F28' : '' || data.card.status === 'Dead' ? '#000' : ''}">
-        <mat-icon>{{data.card.status === 'Alive' ? 'favorite' : 'heart_broken'}}</mat-icon>
-        Status: {{data.card.status}}
-      </p>
 
-      <p class="grid_3">
-        <mat-icon>{{data.card.gender === 'Male' ? 'man' : data.card.gender === 'Female' ? 'woman' : 'pest_control' }}</mat-icon> Gênero: {{data.card.gender}}
-      </p>
-      <p class="grid_2">
-        <mat-icon>person</mat-icon> Especie: {{data.card.species}}
-      </p>
+      <div class="icons">
 
-      <p class="grid_3">
-        <mat-icon>public</mat-icon> Origem: {{data.card.origin.name}}
-      </p>
-      <p class="grid_2">
-        <mat-icon>psychology</mat-icon> Tipo: {{data.card.type || 'Desconhecido'}}
-      </p>
+        <p class="grid_5">
+          Status: {{data.card.status}}
+        </p>
+        <mat-icon [ngStyle]="{color: data.card.status === 'Alive' ? '#8C1F28' : '' || data.card.status === 'Dead' ? '#000' : ''}">{{data.card.status === 'Alive' ? 'favorite' : 'heart_broken'}}</mat-icon>
 
-      <p class="grid_5">
-        <mat-icon>home</mat-icon> Local: {{data.card.location.name}}
-      </p>
+      </div>
+
+      <div class="icons">
+        <p class="grid_3">
+          Gênero: {{data.card.gender}}
+        </p>
+        <mat-icon>{{data.card.gender === 'Male' ? 'man' : data.card.gender === 'Female' ? 'woman' : 'pest_control' }}</mat-icon>
+
+      </div>
+
+      <div class="icons mat-iconks">
+        <mat-icon>home</mat-icon>
+        <p class="grid_5">
+          Local:{{data.card.location.name}}
+        </p>
+
+      </div>
+
+
+
+      <div class="icons">
+        <p class="grid_2">
+          Especie: {{data.card.species}}
+        </p>
+        <mat-icon>person</mat-icon>
+
+      </div>
+
+      <div class="icons">
+        <p class="grid_2">
+          Tipo:{{data.card.type || 'Desconhecido'}}
+        </p>
+        <mat-icon>psychology</mat-icon>
+
+      </div>
+
+
+
+
+
+      <div class="icons">
+        <mat-icon>public</mat-icon>
+        <p class="grid_3">
+          Origem: {{data.card.origin.name}}
+        </p>
+
+      </div>
+
+
 
     </div>
 

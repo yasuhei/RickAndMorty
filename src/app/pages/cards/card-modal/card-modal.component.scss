@@ -1,3 +1,10 @@
+
+.title_name {
+  width: 100%;
+  text-align: center;
+  padding-top: 40px;
+  font-size: 32px;
+}
 .modal-new {
   display: flex;
   justify-content: space-between;
@@ -17,18 +24,35 @@
 
     .caracteristicas{
       display:grid;
-      grid-template-columns: repeat(1, 1fr);
-      gap: 10px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 35px;
+      justify-items: center;
 
-      p, mat-icon {
-        font-size: 30px;
-        text-align: center;
-      }
+
     }
 
   }
 
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 
+  .mat-icon {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  p {
+    width: 100%;
+    font-size: 24px;
+    margin:0px;
+
+  }
+}
 
   .caract {
     text-align: center;
@@ -50,4 +74,5 @@
   }
 
 }
+
 

@@ -20,6 +20,8 @@
   display: flex;
   justify-content:center;
   align-items: center;
+
+
 }
 .form {
   width: 100%;
@@ -91,6 +93,9 @@
   -webkit-backdrop-filter: blur(15px);
   border: 2px solid  rgb(99,38,250);
   background: linear-gradient(90deg, rgba(99,38,250,1) 0%, rgba(139,33,222,1) 35%, rgba(212,49,245,1) 100%);
+  // animation: mymove 5s  infinite ease-in-out;
+  // position: relative;
+
   // border-radius: 0px 50px 0px 50px;
 
   .img {
@@ -108,4 +113,10 @@
   }
 
 
+}
+@keyframes mymove {
+  0%   {top: 0px;}
+  25%  {top: 200px;}
+  75%  {top: 50px}
+  100% {top: 100px;}
 }
