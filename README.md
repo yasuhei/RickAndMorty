@@ -11,4 +11,8 @@ também utilizei o recurso do ngStyle para estilizar as informações em que ach
 
 ![image](https://github.com/yasuhei/RickAndMorty/blob/main/ryck.jpeg)
 
+Nessa nova etapa, Criei um novo componente para vizualizar as informações dos personagem de uma forma mais clara.
+Utilizei mais um componente do Material.io para realizar o projeto.
 
+![image](https://github.com/yasuhei/RickAndMorty/blob/main/img2.jpeg)
+![image](https://github.com/yasuhei/RickAndMorty/blob/main/img1.jpeg)
