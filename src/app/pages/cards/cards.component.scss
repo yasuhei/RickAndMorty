@@ -1,36 +1,26 @@
 .backForCard {
   // background-image: url(../../../assets/test5.png);
-  background-color: #34313B;
+  background-color: #34313b;
   opacity: 90%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
-
   .form {
-
     width: 100%;
-    background-color: #34313B;
+    background-color: #34313b;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding-top: 24px;
-
     .input {
       width: 50vh;
-      background-color: #34313B;
+      background-color: #34313b;
       color: #f1f1f1;
-
-
-
     }
     .mat-form-field-wrapper {
-      padding-bottom: 0!important
-
+      padding-bottom: 0 !important;
     }
-
-
     ._button_filtros {
       width: 100%;
       display: flex;
@@ -54,28 +44,33 @@
 
           &:hover {
             border: 1px solid #fff;
-            background: linear-gradient(90deg, rgba(99, 38, 250, 1) 0%, rgba(139, 33, 222, 1) 35%, rgba(212, 49, 245, 1) 100%);
-            color: #f1f1f1
+            background: linear-gradient(
+              90deg,
+              rgba(99, 38, 250, 1) 0%,
+              rgba(139, 33, 222, 1) 35%,
+              rgba(212, 49, 245, 1) 100%
+            );
+            color: #f1f1f1;
           }
         }
-
-
       }
-
       .submit {
-        background: linear-gradient(90deg, rgba(99, 38, 250, 1) 0%, rgba(139, 33, 222, 1) 35%, rgba(212, 49, 245, 1) 100%);
+        background: linear-gradient(
+          90deg,
+          rgba(99, 38, 250, 1) 0%,
+          rgba(139, 33, 222, 1) 35%,
+          rgba(212, 49, 245, 1) 100%
+        );
         border: none;
         padding: 8px 16px;
         color: #f1f1f1;
         border-radius: 4px;
-
         &:hover {
           background-color: #f1f1f1;
           color: rgba(139, 33, 222, 1);
           border: 1px solid rgba(139, 33, 222, 1);
-          color: #f1f1f1
+          color: #f1f1f1;
         }
-
       }
     }
   }
@@ -104,8 +99,6 @@
       gap: 12px;
       align-items: center;
       justify-items: center;
-
-
       .grid_1 {
         grid-column: span 1;
       }
@@ -121,7 +114,6 @@
       .grid_4 {
         grid-column: span 4;
       }
-
     }
 
     .card {
@@ -132,7 +124,12 @@
       backdrop-filter: blur(15px);
       -webkit-backdrop-filter: blur(15px);
       border: 2px solid rgb(99, 38, 250);
-      background: linear-gradient(90deg, rgba(99, 38, 250, 1) 0%, rgba(139, 33, 222, 1) 35%, rgba(212, 49, 245, 1) 100%);
+      background: linear-gradient(
+        90deg,
+        rgba(99, 38, 250, 1) 0%,
+        rgba(139, 33, 222, 1) 35%,
+        rgba(212, 49, 245, 1) 100%
+      );
       border-radius: 4px;
       .img {
         width: fit-content;
@@ -149,46 +146,34 @@
         color: rgba(255, 255, 255, 0.719);
       }
     }
-
-
   }
 }
 
 @media (max-width: 900px) {
-
   .backForCard {
     // background-image: url(../../../assets/test5.png);
-    background-color: #34313B;
+    background-color: #34313b;
     opacity: 90%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
-
     .form {
-
       width: 100%;
-      background-color: #34313B;
+      background-color: #34313b;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
       padding-top: 24px;
-  
+
       .input {
         width: 50vh;
-        background-color: #34313B;
+        background-color: #34313b;
         color: #f1f1f1;
-  
-  
-  
       }
       .mat-form-field-wrapper {
-        padding-bottom: 0!important
-  
+        padding-bottom: 0 !important;
       }
-  
-
       ._button_filtros {
         width: 100%;
         display: flex;
@@ -213,15 +198,18 @@
         }
 
         .submit {
-          background: linear-gradient(90deg, rgba(99, 38, 250, 1) 0%, rgba(139, 33, 222, 1) 35%, rgba(212, 49, 245, 1) 100%);
+          background: linear-gradient(
+            90deg,
+            rgba(99, 38, 250, 1) 0%,
+            rgba(139, 33, 222, 1) 35%,
+            rgba(212, 49, 245, 1) 100%
+          );
           border: none;
           padding: 8px 16px;
           color: #f1f1f1;
           border-radius: 4px;
-
         }
       }
-
     }
 
     .title_person {
@@ -248,7 +236,6 @@
         align-items: center;
         justify-items: center;
 
-
         .grid_1 {
           grid-column: span 1;
         }
@@ -268,14 +255,6 @@
         .grid_5 {
           grid-column: span 5;
         }
-
-        .grid_6 {
-          grid-column: span 6;
-        }
-
-        .grid_7 {
-          grid-column: span 7;
-        }
       }
 
       .card {
@@ -286,12 +265,15 @@
         backdrop-filter: blur(15px);
         -webkit-backdrop-filter: blur(15px);
         border: 2px solid rgb(99, 38, 250);
-        background: linear-gradient(90deg, rgba(99, 38, 250, 1) 0%, rgba(139, 33, 222, 1) 35%, rgba(212, 49, 245, 1) 100%);
-
+        background: linear-gradient(
+          90deg,
+          rgba(99, 38, 250, 1) 0%,
+          rgba(139, 33, 222, 1) 35%,
+          rgba(212, 49, 245, 1) 100%
+        );
 
         .img {
           width: fit-content;
-
         }
 
         img {
@@ -304,10 +286,7 @@
           text-align: center;
           color: rgba(255, 255, 255, 0.719);
         }
-
-
       }
-
     }
   }
 }
