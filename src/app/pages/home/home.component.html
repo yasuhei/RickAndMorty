@@ -1,27 +1,27 @@
 <div class="total">
   <div class="login">
-    <form class="form">
+    <form class="form" autocomplete="off">
       <span>Login</span>
       <div class="color">
-        <mat-form-field class="example-full-width" appearance="outline">
-          <mat-label>Name</mat-label>
-          <input type="text" matInput placeholder="Your Name">
-        </mat-form-field>
-        <mat-form-field class="example-full-width" appearance="outline">
-          <mat-label>Email</mat-label>
-          <input type="email" matInput placeholder="Ex. pat@example.com">
-        </mat-form-field>
+
+
+        <label for="name"> Seu nome</label>
+        <input type="text" name="name" placeholder="Seu nome">
+
+        <label for="email"> E-mail </label>
+        <input type="email" name="email" placeholder="user@email.com">
       </div>
 
-      <div class="button">
+      <button type="submit" [routerLink]="'/card'" class="button">Entrar</button>
+
+      <!-- <div class="button">
         <button mat-stroked-button color="primary" [routerLink]="'/card'">Entrar</button>
-      </div>
+      </div> -->
       <!-- <div class="recovery">
         <a href=""> Esqueci minha senha</a>
         <a href="">Cadastrar novo usuário</a>
       </div> -->
     </form>
   </div>
-  <div class="background">
-  </div>
+
 </div>

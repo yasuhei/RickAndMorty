@@ -1,16 +1,18 @@
-
 .title_name {
   width: 100%;
   text-align: center;
   padding-top: 40px;
-  font-size: 32px;
+  font-size: 2rem;
 }
+
 .modal-new {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 40px;
   width: 100%;
+
+
 
   .content {
     display: flex;
@@ -22,8 +24,8 @@
       width: 350px;
     }
 
-    .caracteristicas{
-      display:grid;
+    .caracteristicas {
+      display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 35px;
       justify-items: center;
@@ -33,37 +35,33 @@
 
   }
 
-.icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-
-  .mat-icon {
-    font-size: 24px;
+  .icons {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  p {
-    width: 100%;
-    font-size: 24px;
-    margin:0px;
-
-  }
-}
-
-  .caract {
     text-align: center;
 
+    .mat-icon {
+      font-size: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
+    p {
+      width: 100%;
+      font-size: 1rem;
+      margin: 0px;
+
+    }
   }
+
+
 
   .episodios {
 
     width: 278px;
-    height:auto;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,6 +71,84 @@
     }
   }
 
+}
+
+@media (max-width: 900px) {
+
+  .title_name {
+    width: 100%;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 1.125rem;
+  }
+  
+  .modal-new {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    width: 100%;
+  
+    .content {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      flex-direction: column;
+  
+      .char {
+        width: 250px;
+      }
+  
+      .caracteristicas {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 18px;
+        justify-items: center;
+  
+  
+      }
+  
+    }
+  
+    .icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+  
+      .mat-icon {
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      p {
+        width: 100%;
+        font-size: 1.125rem;
+        margin: 0px;
+  
+      }
+    }
+  
+
+  
+    .episodios {
+  
+      width: 278px;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      a {
+        width: 100%;
+      }
+    }
+  
+  }
+  
 }
 
 

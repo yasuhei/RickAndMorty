@@ -24,6 +24,7 @@ export interface Locale {
 export interface Location {
   name: string;
 }
+
 @Component({
   selector: 'app-cards',
   templateUrl: './cards.component.html',
@@ -38,7 +39,6 @@ export class CardsComponent implements OnInit {
   panelOpen = false;
   resultsFilter = [] ;
   id!: number
-
 
   constructor(
     private dashboard: DashboardService,
@@ -60,6 +60,7 @@ export class CardsComponent implements OnInit {
         this.data = success.results
         this.local = success.results.location
         this.origin = success.results.origin
+
 
       })
   }
