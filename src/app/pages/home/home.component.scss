@@ -2,7 +2,7 @@
 .total{
   width: 100%;
   display: flex;
-  justify-content:end;
+  justify-content:center;
   align-items:center;
   background-image:url(../../../assets/test4.jpg);
   background-repeat: no-repeat;
@@ -11,13 +11,14 @@
 
 
   .login {
-    width: 25%;
+    width: 100%;
+    max-width: 450px;
     height: 100vh;
     display: flex;
     justify-content:center;
     align-items:center;
-    padding-right: 44px;
-    margin-right: 220px;
+    // padding-right: 44px;
+    // margin-right: 220px;
 
   }
   .form {
@@ -26,16 +27,48 @@
     flex-direction:column;
     align-items:center;
     justify-content:center;
-    background-color:rgba(255, 255, 255, 0.801);
+    background-color:#2f2f2c49;
     padding: 30px 0;
     border-radius: 6px ;
+    margin-top: 100px;
 
 
+    input {
+      width: 100%;
+      border-radius: 4px;
+      max-width: 400px;
+      border: none;
+      padding: 10px;
+      margin-bottom: 12px;
+    }
+    label {
+      width: 100%;
+      max-width: 400px;
+      text-align: left;
+
+    }
+    button {
+      font-size: 1rem;
+      padding: 8px 24px;
+      border: none;
+      border-radius: 4px;
+      margin-top: 12px;
+      background-color: #04ABB8;
+      color: #f1f1f1;
+
+
+
+      &:hover {
+        filter: brightness(0.9);
+        transition: all 0.1s ease-in-out ;
+
+      }
+    }
 
     span {
       padding-bottom: 10px;
       font-size: 16px;
-      color: #000;
+      color: #f1f1f1;
     }
   }
   .color {
@@ -44,6 +77,7 @@
     flex-direction:column;
     align-items:center;
     justify-content:center;
+    color: #f1f1f1;
   }
   .example-full-width {
     width:400px;
@@ -65,7 +99,7 @@
     a {
       text-decoration: none;
       font-size: 16px;
-      color: #000;
+      color: #f1f1f1;
     }
   }
 

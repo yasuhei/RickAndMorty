@@ -1,37 +1,28 @@
-<!-- <mat-expansion-panel class="no-shadow" hideToggle (opened)="panelOpen = true" (closed)="panelOpen = false">
-  <mat-expansion-panel-header>
-    <mat-panel-title>
-      Filtros
-      <mat-icon>{{ panelOpen ? 'expand_less' : 'expand_more' }}</mat-icon>
-    </mat-panel-title>
-  </mat-expansion-panel-header> -->
-
-
-
 <div class="backForCard">
   <form [formGroup]="filtro" class="form" (ngSubmit)="filter()" autocomplete="addss2" role="off">
-    <div class="form_input">
-      <mat-form-field appearance="outline">
-        <mat-label>Nome</mat-label>
-        <input matInput type="text" formControlName="name" />
-      </mat-form-field>
-      <mat-form-field appearance="outline">
-        <mat-label>Status</mat-label>
-        <input matInput type="text" formControlName="status" />
-      </mat-form-field>
-    </div>
+
+
+    <mat-form-field appearance="outline" class="input">
+      <mat-label>Nome</mat-label>
+      <input matInput type="search" formControlName="name" />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="input">
+      <mat-label>Status</mat-label>
+      <input matInput type="text" formControlName="status" />
+    </mat-form-field>
 
 
 
     <div class="_button_filtros">
       <div class="filter-buttons">
-        <button type="reset" mat-button color="primary" (click)="cleanFilter()">
+        <button type="reset" class="filter" (click)="cleanFilter()">
 
           Limpar filtros
         </button>
       </div>
 
-      <button type="submit" mat-raised-button color="primary">Filtrar</button>
+      <button type="submit" class="submit">Filtrar</button>
     </div>
 
   </form>
@@ -44,7 +35,7 @@
         <div class="img">
           <img [src]="card.image" alt="">
           <h3>{{card.name.substring(0, 14)}}</h3>
-          
+
         </div>
       </div>
     </div>

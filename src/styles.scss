@@ -17,6 +17,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 
 
+
 // .dialog-card {
 // 	background: linear-gradient(to bottom, #212936 50px, #fff 50px 100%);
 // 	position: relative;
@@ -41,4 +42,15 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   top: 12px;
   color: #f1f1f1;
   cursor: pointer;
+}
+.mat-form-field-appearance-outline .mat-form-field-wrapper {
+
+  background: #fff;
+  color:#f1f1f1
+}
+
+.mat-form-field-wrapper{
+  padding: 2px ;
+  border-radius: 4px;
+  margin: 0;
 }
