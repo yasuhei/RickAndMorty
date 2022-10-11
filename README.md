@@ -16,3 +16,6 @@ Utilizei mais um componente do Material.io para realizar o projeto.
 
 ![image](https://github.com/yasuhei/RickAndMorty/blob/main/img2.jpeg)
 ![image](https://github.com/yasuhei/RickAndMorty/blob/main/img1.jpeg)
+
+
+https://rickandmorty-yasuhei.vercel.app/
