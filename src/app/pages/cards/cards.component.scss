@@ -134,12 +134,8 @@
       border: 2px solid rgb(99, 38, 250);
       background: linear-gradient(90deg, rgba(99, 38, 250, 1) 0%, rgba(139, 33, 222, 1) 35%, rgba(212, 49, 245, 1) 100%);
       border-radius: 4px;
-
-
-
       .img {
         width: fit-content;
-
       }
 
       img {
@@ -152,27 +148,9 @@
         text-align: center;
         color: rgba(255, 255, 255, 0.719);
       }
-
-
     }
 
-    @keyframes mymove {
-      0% {
-        top: 0px;
-      }
 
-      25% {
-        top: 200px;
-      }
-
-      75% {
-        top: 50px
-      }
-
-      100% {
-        top: 100px;
-      }
-    }
   }
 }
 
@@ -330,23 +308,6 @@
 
       }
 
-      @keyframes mymove {
-        0% {
-          top: 0px;
-        }
-
-        25% {
-          top: 200px;
-        }
-
-        75% {
-          top: 50px
-        }
-
-        100% {
-          top: 100px;
-        }
-      }
     }
   }
 }
